@@ -15,6 +15,9 @@
 		DDA8377F230AA16900DFDD57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8377E230AA16900DFDD57 /* main.m */; };
 		DDA83789230AA16900DFDD57 /* PDWeakAttemptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA83788230AA16900DFDD57 /* PDWeakAttemptTests.m */; };
 		DDA83794230AA16900DFDD57 /* PDWeakAttemptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA83793230AA16900DFDD57 /* PDWeakAttemptUITests.m */; };
+		DDA837A4230AA18700DFDD57 /* PDWeakSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA837A3230AA18700DFDD57 /* PDWeakSingleton.m */; };
+		DDA837AA230ABD7A00DFDD57 /* NSObject+PDWeakImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA837A9230ABD7A00DFDD57 /* NSObject+PDWeakImpl.m */; };
+		DDA837B0230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA837AF230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		DDA8378F230AA16900DFDD57 /* PDWeakAttemptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDWeakAttemptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA83793230AA16900DFDD57 /* PDWeakAttemptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDWeakAttemptUITests.m; sourceTree = "<group>"; };
 		DDA83795230AA16900DFDD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA837A2230AA18700DFDD57 /* PDWeakSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDWeakSingleton.h; sourceTree = "<group>"; };
+		DDA837A3230AA18700DFDD57 /* PDWeakSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDWeakSingleton.m; sourceTree = "<group>"; };
+		DDA837A8230ABD7A00DFDD57 /* NSObject+PDWeakImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PDWeakImpl.h"; sourceTree = "<group>"; };
+		DDA837A9230ABD7A00DFDD57 /* NSObject+PDWeakImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PDWeakImpl.m"; sourceTree = "<group>"; };
+		DDA837AE230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PDWeakAssociateProperty.h"; sourceTree = "<group>"; };
+		DDA837AF230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PDWeakAssociateProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		DDA8376E230AA16700DFDD57 /* PDWeakAttempt */ = {
 			isa = PBXGroup;
 			children = (
+				DDA837A1230AA16F00DFDD57 /* Source */,
 				DDA8376F230AA16700DFDD57 /* AppDelegate.h */,
 				DDA83770230AA16700DFDD57 /* AppDelegate.m */,
 				DDA83772230AA16700DFDD57 /* ViewController.h */,
@@ -130,6 +140,19 @@
 				DDA83795230AA16900DFDD57 /* Info.plist */,
 			);
 			path = PDWeakAttemptUITests;
+			sourceTree = "<group>";
+		};
+		DDA837A1230AA16F00DFDD57 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DDA837A2230AA18700DFDD57 /* PDWeakSingleton.h */,
+				DDA837A3230AA18700DFDD57 /* PDWeakSingleton.m */,
+				DDA837A8230ABD7A00DFDD57 /* NSObject+PDWeakImpl.h */,
+				DDA837A9230ABD7A00DFDD57 /* NSObject+PDWeakImpl.m */,
+				DDA837AE230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.h */,
+				DDA837AF230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA83774230AA16700DFDD57 /* ViewController.m in Sources */,
+				DDA837B0230AC78000DFDD57 /* NSObject+PDWeakAssociateProperty.m in Sources */,
 				DDA8377F230AA16900DFDD57 /* main.m in Sources */,
+				DDA837AA230ABD7A00DFDD57 /* NSObject+PDWeakImpl.m in Sources */,
 				DDA83771230AA16700DFDD57 /* AppDelegate.m in Sources */,
+				DDA837A4230AA18700DFDD57 /* PDWeakSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
